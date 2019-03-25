@@ -36,6 +36,18 @@
                 android:value="com.android.settings.smartnav.NavigationBarSettings" />
         </activity>
 
+       <!-- Stock navbar settings -->
+        <activity android:name="Settings$StockNavbarSettingsActivity"
+                android:label="@string/navbar_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.bootleggers.dumpster.fragments.NavbarSettings" />
+        </activity>
+
         <!-- Smartbar settings -->
         <activity android:name="Settings$SmartbarSettingsActivity"
                 android:label="@string/smartbar_settings_title"
